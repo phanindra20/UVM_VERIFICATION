@@ -1,6 +1,7 @@
 module fifo_memory_based #(
     parameter DATA_WIDTH = 8,  // Data width (number of bits per word)
-    parameter FIFO_DEPTH = 8  // Depth of the FIFO (number of words)
+    parameter FIFO_DEPTH = 8,  // Depth of the FIFO (number of words)
+	parameter FIFO_VALID = 7
 )(
     input wire clk,              // Clock signal
     input wire rst,              // Reset signal (active high)

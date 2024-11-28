@@ -16,6 +16,9 @@ module fifo_tb;
     wire full;
     wire empty;
 
+	wire req1;
+	wire req2;
+
     // Instantiate the FIFO memory-based module
     fifo_memory_based #(
         .DATA_WIDTH(DATA_WIDTH),
